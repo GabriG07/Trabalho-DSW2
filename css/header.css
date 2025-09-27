@@ -64,6 +64,16 @@ header{
 }
 
 
+.main-content { /* estado normal (sidebar aberta) */
+  margin-left: 20vw; 
+  transition: margin-left 0.3s ease;
+}
+
+
+.main-content.expanded { /* estado quando a sidebar está fechada */
+  margin-left: 10vw; 
+}
+
 @media (max-width: 768px) {
     .search-bar::placeholder {
         color: transparent;
@@ -77,4 +87,22 @@ header{
     .notification-profile-container{
         gap: 0px;
     }
+}
+
+@media (max-width: 480px) {
+    @media (max-width: 480px) {
+  .profile-info {
+        gap:2px;         
+        font-size: 8px;   
+  }
+
+  .profile-info img, 
+  .notification-button img{
+        width: 20px;      
+        height: auto;
+  }
+
+
+}
+
 }

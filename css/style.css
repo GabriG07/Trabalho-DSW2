@@ -10,7 +10,6 @@ body{
 }
 
 main{
-    margin-left: 20vw;
     flex-grow: 1;
     max-width: 80vw;
 }
