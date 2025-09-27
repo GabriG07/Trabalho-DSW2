@@ -5,6 +5,9 @@
 }
 
 aside{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 20vw;
     height: 100vh;
     max-width: 305px; 
@@ -47,14 +50,24 @@ aside{
     height: auto;
 }
 
+.sidebar ul li span {
+    overflow: hidden;
+}
+
 @media (max-width: 768px) { /* Para telas pequenas*/
     .sidebar ul li img {
         width: 28px;
         height: auto;
+        
     }
 
+    .sidebar ul li{
+        margin-bottom: 5vw;
+    }
+    
+
     .sidebar ul li span {
-        display: none; /* sem texto */
+        display: none; 
     }
 
     

@@ -4,12 +4,15 @@ header{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3vh;
+    padding: 0 2vw;
+    
 }
 
 
 /* Search Bar*/
 .search-container{
     display: flex;
+    flex: 1 1 300px;
     margin-left: 6%;
     width: 70%;
     align-items: center;
