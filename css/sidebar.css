@@ -1,0 +1,62 @@
+.logo{
+    padding-left: 15px;
+    width:80%;
+    height: auto;
+}
+
+aside{
+    width: 20vw;
+    height: 100vh;
+    max-width: 305px; 
+    min-width: 120px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid white ;
+    background-color: #0D1024;
+    color: white;   
+}
+
+
+.sidebar ul { 
+    list-style: none; 
+}
+
+.sidebar ul li { 
+    width: 80%;
+    padding: 10% 0 10% 10%; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    gap: 10%; 
+    border-radius: 26px 26px 26px 0px;
+
+}
+
+.sidebar ul li:hover { 
+    background-color: white;
+    color: black;
+}
+
+.sidebar ul li:hover img {
+    filter: invert(100%);
+}
+
+.sidebar ul li img {
+    width: 15%; 
+    height: auto;
+}
+
+@media (max-width: 768px) { /* Para telas pequenas*/
+    .sidebar ul li img {
+        width: 28px;
+        height: auto;
+    }
+
+    .sidebar ul li span {
+        display: none; /* sem texto */
+    }
+
+    
+}
+
