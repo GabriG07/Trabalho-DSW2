@@ -23,11 +23,14 @@ aside{
 
 .sidebar ul { 
     list-style: none; 
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar ul li { 
-    width: 80%;
-    padding: 10% 0 10% 10%; 
+    width: 60%;
+    padding: 5% 0 5% 10%; 
+    margin-bottom: 2vh;
     cursor: pointer; 
     display: flex; 
     align-items: center; 
@@ -51,6 +54,7 @@ aside{
 }
 
 .sidebar ul li span {
+    font-size: 18px;
     overflow: hidden;
 }
 
@@ -61,10 +65,11 @@ aside{
         
     }
 
-    .sidebar ul li{
-        margin-bottom: 5vw;
-    }
-    
+   .sidebar ul { 
+        justify-content: center;
+   }
+
+ 
 
     .sidebar ul li span {
         display: none; 
