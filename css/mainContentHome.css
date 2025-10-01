@@ -1,0 +1,93 @@
+.main-content {
+    margin-left: 17vw; 
+}
+
+.images-hqs-home{
+    display: flex;
+    width: 90%;
+    height: 10%;
+    flex-direction: column;
+}
+
+.hqs-top{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr;
+    gap: 25px;
+}
+
+.hqs-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 100%;
+}
+
+
+
+/* ----- Bordas e Imagens das HQs Superiores -----*/
+#hq1-border, #hq2-border{
+    background: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+#hq1-border img, #hq2-border img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    object-fit: cover;
+}
+
+/* ----- Primeira Imagem -----*/
+#hq1-border {
+    width: 100%;
+    height: auto;
+}
+
+/* ----- Segunda Imagem -----*/
+#hq2-border {
+    height: 85%;
+    width: 100%;
+}
+
+/* ----- Bordas e Imagens das HQs Inferiores -----*/
+#hq3-border img,
+#hq4-border img, 
+#hq5-border img, 
+#hq6-border img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    clip-path: polygon(0 7%, 100% 0, 100% 100% , 0% 100%);
+    object-fit: cover;
+}
+
+#hq3-border, #hq4-border, #hq5-border, #hq6-border {
+
+    background: white;
+    clip-path: polygon(0 7%, 100% 0, 100% 100% , 0% 100%);
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    
+    .main-content {
+        margin-left: 90px; 
+        transition: margin-left 0.3s ease;
+    }
+
+    .main-content.expanded { /* estado quando a sidebar está fechada */
+        margin-left: 10vw; 
+    }
+}

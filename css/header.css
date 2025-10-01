@@ -3,17 +3,15 @@ header{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 3vh;
     padding: 0 2vw;
     
 }
-
 
 /* Search Bar*/
 .search-container{
     display: flex;
     flex: 1 1 300px;
-    margin-left: 6%;
+    margin-left: 2%;
     width: 70%;
     align-items: center;
 }
@@ -28,8 +26,8 @@ header{
 .search-bar{
     border: none; 
     outline: none;
-    padding: 10px 40px 10px 10px;
-    width: 40%;
+    padding: 12px 50px 12px 10px;
+    width: 50%;
     min-width: 120px;
     text-align: right;
     border: 2px solid white;
@@ -64,16 +62,6 @@ header{
 }
 
 
-.main-content { /* estado normal (sidebar aberta) */
-  margin-left: 20vw; 
-  transition: margin-left 0.3s ease;
-}
-
-
-.main-content.expanded { /* estado quando a sidebar está fechada */
-  margin-left: 10vw; 
-}
-
 @media (max-width: 768px) {
     .search-bar::placeholder {
         color: transparent;
@@ -101,9 +89,10 @@ header{
         height: auto;
   }
 
-
-
-
+  .search-container{
+    margin-left: 0px;
+  }
+  
 
 
 
