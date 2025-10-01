@@ -90,7 +90,6 @@ header{
 }
 
 @media (max-width: 480px) {
-    @media (max-width: 480px) {
   .profile-info {
         gap:2px;         
         font-size: 8px;   
@@ -103,6 +102,10 @@ header{
   }
 
 
-}
+
+
+
+
+
 
 }
