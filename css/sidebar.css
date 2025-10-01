@@ -8,9 +8,9 @@ aside {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20vw;
+    width: 15vw;
     height: 100vh;
-    max-width: 305px;
+    max-width: 15vw;
     min-width: 80px;
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ aside {
     /* Para telas pequenas*/
 
     .sidebar ul li img {
-        width: 28px;
+        width: 26px;
         height: auto;
 
     }
@@ -102,7 +102,7 @@ aside {
         top: 10px;
         left: 20px;
         z-index: 100;
-        background: #0D1024;
+        background: #0d102400;
         color: white;
         border: none;
         font-size: 24px;
