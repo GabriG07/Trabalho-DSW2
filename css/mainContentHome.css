@@ -5,7 +5,7 @@
 .images-hqs-home{
     display: flex;
     width: 90%;
-    height: 10%;
+    height: auto;
     flex-direction: column;
 }
 
@@ -22,7 +22,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
-    width: 100%;
+    align-items: end;
 }
 
 
@@ -38,7 +38,6 @@
 #hq1-border img, #hq2-border img {
     width: 100%;
     height: 100%;
-    display: block;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     object-fit: cover;
 }
@@ -62,17 +61,30 @@
 #hq6-border img {
     width: 100%;
     height: 100%;
-    display: block;
-    clip-path: polygon(0 7%, 100% 0, 100% 100% , 0% 100%);
-    object-fit: cover;
+    clip-path: inherit;
 }
 
 #hq3-border, #hq4-border, #hq5-border, #hq6-border {
-
     background: white;
     clip-path: polygon(0 7%, 100% 0, 100% 100% , 0% 100%);
     padding: 2px;
-    box-sizing: border-box;
+}
+
+#hq3-border{
+    height: 100%;
+    width: auto;
+}
+#hq4-border{
+    height: 107.6%;
+    width: auto;
+}
+#hq5-border{
+    height: 115.7%;
+    width: auto;
+}
+#hq6-border{
+    height: 124.5%;
+    width: auto;
 }
 
 
