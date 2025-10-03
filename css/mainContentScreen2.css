@@ -27,6 +27,11 @@
     font-size: 2rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-button:hover{
+    transform: scale(1.1);
 }
 
 #prev-button {
