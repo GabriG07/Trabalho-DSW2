@@ -1,16 +1,17 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-color: #0D1024;
+  background-color: #0d1024;
 }
 
 main {
-    flex-grow: 1;
-    max-width: 80vw;
+  flex-grow: 1;
+  max-width: 80vw;
 }
