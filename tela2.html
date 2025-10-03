@@ -41,14 +41,17 @@
 
     <main class="main-content">
         <div class="pages">
-            <picture>
-                <source srcset="img/primeiraPagina-tela2.png" media="(max-width: 768px)">
-                <img src="img/primeiraESegundaPaginas-tela2.png" alt="">
-            </picture>
+            <div class="pages">
+                <img id="hq-page" src="img/primeiraESegundaPaginas-tela2.png" alt="">
+            </div>
         </div>
+
+    <button id="prev-button" class="nav-button">◀</button>
+    <button id="next-button" class="nav-button">▶</button>
         
     </main>
 
     <script src="js/sidebar.js"></script>
+    <script src="js/trocaPaginasSegundaTela.js"></script>
   </body>
 </html>
