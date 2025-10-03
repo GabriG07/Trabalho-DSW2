@@ -3,6 +3,10 @@
     height: auto;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 aside {
     position: fixed;
     top: 0;

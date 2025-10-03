@@ -22,3 +22,23 @@
     }
     
   });
+
+
+
+
+  /* ---- Tratando o Redirecionamento de página --- */
+const sidebarItems = document.querySelectorAll(".sidebar ul li");
+const logo = document.querySelector(".logo");
+
+sidebarItems.forEach(item => {
+  item.addEventListener("click", () => {
+    const img = item.querySelector("img");
+    const src = img.src; 
+
+    if (src.endsWith("home.png")) {
+      window.location.href = "index.html";
+    }
+  });
+});
+
+logo.addEventListener("click", () => window.location.href = "index.html")

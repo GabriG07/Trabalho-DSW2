@@ -197,6 +197,13 @@
     display: block;
 }
 
+#hq3-border img:hover,
+#hq4-border img:hover, 
+#hq5-border img:hover, 
+#hq6-border img:hover {
+    cursor: pointer;
+}
+
 #hq3-border, #hq4-border, #hq5-border, #hq6-border {
     background: white;
     clip-path: polygon(0 7%, 100% 0, 100% 100% , 0% 100%);
