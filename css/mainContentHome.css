@@ -27,15 +27,136 @@
 
 
 
+/*----- Botões da Primeira HQ -----*/
+.hq1-buttom1 {
+    position: absolute;
+    height: auto;
+    bottom: 7%; 
+    left: 1%;  
+    width: 55%;
+    height: auto;
+}
+
+.hq1-buttom1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hq1-buttom1-text-authors {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 90%; 
+    color: white;
+    font-size: 0.8vw; 
+    font-weight: normal;
+    text-align: left;
+    font-family: Roboto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hq1-buttom1-text-title {
+    position: absolute;
+    top: 55%; 
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.2vw; 
+    font-weight: bold;
+    text-align: center;
+    font-family: Roboto;
+    line-height: 1.2;
+}
+
+.hq1-buttom2 {
+    position: absolute;
+    height: auto;
+    bottom: 17%; 
+    right: 1%;  
+    width: 22%;
+    height: auto;
+}
+
+
+/*----- Botões da Segunda HQ -----*/
+.hq2-buttom1 {
+    position: absolute;
+    height: auto;
+    top: 2%; 
+    left: 5%;  
+    width: 65%;
+    height: auto;
+}
+
+.hq2-buttom1-text-title {
+    position: absolute;
+    top: 67%; 
+    left: 7%;
+    width: 90%;
+    color: white;
+    font-size: 1.2vw; 
+    font-weight: bold;
+    text-align: left;
+    font-family: Roboto;
+    line-height: 1.2;
+}
+
+.hq2-buttom1-text-authors {
+    position: absolute;
+    top: 79%;
+    left: 7%;
+    width: 90%; 
+    color: white;
+    font-size: 0.7vw; 
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    font-family: Roboto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.8px
+
+}
+
+.hq2-buttom2 {
+  position: absolute;
+  height: auto;
+  bottom: 20%; 
+  right: 8%;  
+  width: 15%;
+  height: auto;
+}
+
+.hq2-buttom2-text{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2vw; 
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    font-family: Roboto;
+}
+
+
 /* ----- Bordas e Imagens das HQs Superiores -----*/
 #hq1-border, #hq2-border{
+    position: relative;
     background: white;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     padding: 2px;
     box-sizing: border-box;
 }
 
-#hq1-border img, #hq2-border img {
+#hq1-border > img:first-child, #hq2-border img {
     width: 100%;
     height: 100%;
     clip-path: inherit;
@@ -102,23 +223,58 @@
     .hqs-bottom {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        
+        padding: 0;
         align-items: end;
     }
 
     #hq3-border, #hq4-border, #hq5-border, #hq6-border {
         width: 100%;
-        height: auto;
+        height: 100%;
         background: none;
         clip-path: none;
+        border: 2px solid white;
         padding: 0;
-        
     }
 
     #hq1-border, #hq2-border{
         background: none;
         clip-path: none;
+        border: 2px solid white;
+        padding: 0;
     }
+
+    .hq1-buttom1 {
+        width: 60%;
+        bottom: 3%;
+        left: 2%;
+    }
+
+    .hq1-buttom1-text-authors {
+        font-size: 1.5vw;
+
+    }
+
+    .hq1-buttom1-text-title {
+        font-size: 4.5vw;
+    }
+
+    .hq1-buttom2 {
+        bottom: 2%; 
+        width: 30%;
+    }
+
+    .hq2-buttom1-text-title{
+        font-size: 3vw;
+    }
+
+    .hq2-buttom1-text-authors{
+        font-size: 1.3vw;
+    }
+
+    .hq2-buttom2-text{
+        font-size: 3.2vw; 
+    }
+    
 }
 
 
@@ -133,4 +289,22 @@
     .main-content.expanded { /* estado quando a sidebar está fechada */
         margin-left: 10vw; 
     }
+
+    .hq1-buttom1 {
+        width: 55%;
+        bottom: 3%;
+        left: 2%;
+    }
+
+    .hq1-buttom1-text-authors {
+        font-size: 1.6vw;
+        left: 12%;
+    }
+
+    .hq1-buttom1-text-title {
+        font-size: 4vw;
+    }
+    
+
+    
 }
