@@ -7,12 +7,24 @@ hqDivs.forEach(div => {
         if (img.src.includes("lifeIsStrangeCover.png")) {
             img.src = "img/lifeIsStrangeHover.png";
         } 
+        else if(img.src.includes("houseAmokCover.png")){
+            img.src = "img/houseAmokHover.png";
+        }
+        else if(img.src.includes("beastlandsCover.png")){
+            img.src = "img/beastlandsHover.png";
+        }
     });
 
     div.addEventListener("mouseleave", () => {
         if (img.src.includes("lifeIsStrangeHover.png")) {
             img.src = "img/lifeIsStrangeCover.png";
         } 
+        else if(img.src.includes("houseAmokHover.png")){
+            img.src = "img/houseAmokCover.png";
+        }
+        else if(img.src.includes("beastlandsHover.png")){
+            img.src = "img/beastlandsCover.png";
+        }
     });
 
     div.addEventListener("click", () => {
