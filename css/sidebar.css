@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-aside {
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@ aside {
     height: auto;
 }
 
-.sidebar ul li span {
+.sidebar-text {
     font-size: 18px;
     overflow: hidden;
 }

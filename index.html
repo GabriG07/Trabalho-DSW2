@@ -19,25 +19,25 @@
 
   <body>
     <!-- Sidebar -->
-    <button id="toggle-button">☰</button>
-    <aside class="sidebar" id="sidebar">
+    <button id="toggle-button" aria-label="Abrir menu de navegação">☰</button>
+    <nav class="sidebar" id="sidebar">
       <div class="sidebar-top">
-        <img class="logo" src="img/IndigoComics.png" />
+        <img class="logo" src="img/IndigoComics.png" alt="Logo IndigoComics"/>
         <ul>
-          <li><img src="img/home.png" /><span>Menu</span></li>
-          <li><img src="img/suaColecao.png" /><span>Sua Coleção</span></li>
-          <li><img src="img/favoritos.png" /><span>Favoritos</span></li>
-          <li><img src="img/novidades.png" /><span>Novidades</span></li>
+          <li><img src="img/home.png" alt="Botão Home"/><span>Menu</span></li>
+          <li><img src="img/suaColecao.png" alt="Botão de Coleção"/><span>Sua Coleção</span></li>
+          <li><img src="img/favoritos.png" alt="Botão de Favoritos"/><span>Favoritos</span></li>
+          <li><img src="img/novidades.png" alt="Botão de Novidades"/><span>Novidades</span></li>
         </ul>
       </div>
 
       <div class="sidebar-bottom">
         <ul>
-          <li><img src="img/configs.png" /><span>Configurações</span></li>
-          <li><img src="img/sair.png" /><span>Sair</span></li>
+          <li><img src="img/configs.png" alt="Botão de Configurações"/><span>Configurações</span></li>
+          <li><img src="img/sair.png" alt="Botão de Sair"/><span>Sair</span></li>
         </ul>
       </div>
-    </aside>
+    </nav>
 
     <!-- Coonteúdo Principal -->
     <main class="main-content">
@@ -48,24 +48,24 @@
             class="search-bar"
             placeholder="Pesquise um quadrinho ou autor"
           />
-          <img src="img/search.png" />
+          <img src="img/search.png" alt="Ícone de Busca"/>
         </div>
 
         <div class="notification-profile-container">
           <button class="notification-button">
-            <img src="img/notification.png" />
+            <img src="img/notification.png" alt="Botão de Notificações"/>
           </button>
           <div class="profile-info">
-            <img src="img/profilePicture.png" />
+            <img src="img/profilePicture.png" alt="Foto de Perfil"/>
             <span class="profile-name">PedrinhoZik412</span>
           </div>
         </div>
       </header>
 
-      <div class="images-hqs-home">
+      <section class="images-hqs-home">
         <div class="hqs-top">
           <div id="hq1-border">
-            <img src="img/beatboxAndTuneCover.png" alt="" />
+            <img src="img/beatboxAndTuneCover.png" alt="Capa da HQ Beatbox and Tune: Volume 1" />
             <div class="hq1-buttom1">
               <img src="img/botaoElipseGrande.png" alt="" />
               <span class="hq1-buttom1-text-authors"
@@ -76,21 +76,21 @@
               >
             </div>
             <div>
-              <img class="hq1-buttom2" src="img/botaoLeiaAgora.png" alt="" />
+              <img class="hq1-buttom2" src="img/botaoLeiaAgora.png" alt="Botão Leia Agora" />
             </div>
           </div>
 
           <div id="hq2-border">
-            <img src="img/imagemHqContinueALeitura.png" alt="" />
+            <img src="img/imagemHqContinueALeitura.png" alt="Capa do quadrinho Antes do Incal - 13#" />
             <div class="hq2-buttom1">
-              <img src="img/botaoContinueALeitura.png" alt="" />
+              <img src="img/botaoContinueALeitura.png" alt="Botão Continuar Leitura" />
               <span class="hq2-buttom1-text-title">Antes do Incal - 13#</span>
               <span class="hq2-buttom1-text-authors"
                 >Zoran Janjetov, Alejandro Jodorowski</span
               >
             </div>
             <div class="hq2-buttom2">
-              <img src="img/botaoPorcentagemLida.png" alt="" />
+              <img src="img/botaoPorcentagemLida.png" alt="Ícone de progresso de leitura" />
               <span class="hq2-buttom2-text">41%</span>
             </div>
           </div>
@@ -98,19 +98,19 @@
 
         <div class="hqs-bottom">
           <div id="hq3-border">
-            <img src="img/beastlandsCover.png" alt="" />
+            <img src="img/beastlandsCover.png" alt="Capa do quadrinho Beastlands" />
           </div>
           <div id="hq4-border">
-            <img src="img/houseAmokCover.png" alt="" />
+            <img src="img/houseAmokCover.png" alt="Capa do quadrinho House Amok" />
           </div>
           <div id="hq5-border">
-            <img src="img/lifeIsStrangeCover.png" alt="" />
+            <img src="img/lifeIsStrangeCover.png" alt="Capa do quadrinho Life is Strange" />
           </div>
           <div id="hq6-border">
-            <img src="img/theWildCosmosCover.png" alt="" />
+            <img src="img/theWildCosmosCover.png" alt="Capa do quadrinho The Wild Cosmos" />
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <script src="js/sidebar.js"></script>
