@@ -1,13 +1,16 @@
 const imagesDesktop = [
-    "img/primeiraESegundaPaginas-tela2.png",
-    "img/terceiraEQuartaPaginas-tela2.png"
+    "img/lis-tela2-1-2.jpg",
+    "img/lis-tela2-3-4.jpg",
+    "img/lis-tela2-5-6.jpg"
 ];
 
 const imagesMobile = [
-    "img/primeiraPagina-tela2.png",
-    "img/segundaPagina-tela2.png",
-    "img/terceiraPagina-tela2.png",
-    "img/quartaPagina-tela2.png"
+    "img/lis-tela2-1.jpg",
+    "img/lis-tela2-2.jpg",
+    "img/lis-tela2-3.jpg",
+    "img/lis-tela2-4.jpg",
+    "img/lis-tela2-5.jpg",
+    "img/lis-tela2-6.jpg"
 ];
 
 let currentIndex = 0;
