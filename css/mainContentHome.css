@@ -205,6 +205,11 @@
 }
 
 #hq3-border, #hq4-border, #hq5-border, #hq6-border {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+#hq3-border, #hq4-border, #hq5-border, #hq6-border {
     background: white;
     clip-path: polygon(0 7%, 100% 0, 100% 100% , 0% 100%);
     padding: 2px;
@@ -255,6 +260,14 @@ span{
         clip-path: none;
         border: 2px solid white;
         padding: 0;
+        position: relative;
+    }
+
+    /* Adicionar feedback visual ao toque em mobile */
+    #hq3-border:active, #hq4-border:active, #hq5-border:active, #hq6-border:active {
+        opacity: 0.9;
+        transform: scale(0.98);
+        transition: all 0.1s ease;
     }
 
     #hq1-border, #hq2-border{
