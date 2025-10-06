@@ -32,8 +32,20 @@ function showImage(index) {
     imgElement.src = screenImages[currentIndex];
 }
 
+// Event listeners para click (desktop)
 prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
 nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
+
+// Event listeners para touch (mobile) - mais responsivo
+prevBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    showImage(currentIndex - 1);
+});
+
+nextBtn.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    showImage(currentIndex + 1);
+});
 
 // Atualiza imagem se o usuário redimensionar a tela
 window.addEventListener("resize", () => showImage(currentIndex));

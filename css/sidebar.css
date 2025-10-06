@@ -1,125 +1,146 @@
 .logo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .logo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 15vw;
-    height: 100vh;
-    max-width: 15vw;
-    min-width: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-right: 2px solid white;
-    background-color: #0D1024;
-    color: white;
-    transition: transform 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 100vh;
+  max-width: 280px;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid white;
+  background-color: #0d1024;
+  color: white;
+  transition: transform 0.3s ease;
 }
 
-
 .sidebar ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
 }
 
 .sidebar ul li {
-    width: 60%;
-    padding: 5% 0 5% 10%;
-    margin-bottom: 2vh;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10%;
-    border-radius: 26px 26px 26px 0px;
-
+  width: 60%;
+  padding: 5% 0 5% 10%;
+  margin-bottom: 2vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  border-radius: 26px 26px 26px 0px;
+  overflow: hidden;
 }
 
 .sidebar ul li:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .sidebar ul li:hover img {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 .sidebar ul li img {
-    width: 25x;
-    height: auto;
+  width: 25px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.sidebar ul li span {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
+  flex: 1;
 }
 
 .sidebar-text {
-    font-size: 18px;
-    overflow: hidden;
+  font-size: 18px;
+  overflow: hidden;
 }
-
-
 
 /* fechando sidebar */
 .sidebar.closed {
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
+@media (max-width: 1400px) {
+  /* Para telas médias - esconde texto quando não couber */
 
+  nav {
+    width: 10vw;
+    max-width: 10vw;
+  }
+
+  .sidebar ul li span {
+    display: none;
+  }
+
+  .sidebar ul li {
+    width: auto;
+    padding: 10px;
+  }
+
+  .sidebar ul li img {
+    width: 28px;
+    height: auto;
+  }
+
+  .sidebar ul {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 768px) {
-    /* Para telas pequenas*/
+  /* Para telas pequenas */
 
-    .sidebar ul li img {
-        width: 26px;
-        height: auto;
+  .sidebar ul li img {
+    width: 26px;
+    height: auto;
+  }
 
-    }
-
-    .sidebar ul li {
-        width: auto;
-        padding: 10px;
-    }
-
-    .sidebar ul {
-        justify-content: center;
-    }
-
-    .sidebar ul li span {
-        display: none;
-    }
+  .sidebar ul li {
+    padding: 8px;
+  }
 }
 
 @media (max-width: 480px) {
-    /* Para celulares */
+  /* Para celulares */
 
-    #toggle-button {
-        position: fixed;
-        top: 10px;
-        left: 20px;
-        z-index: 100;
-        background: #0d102400;
-        color: white;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 5px 10px;
-        border-radius: 6px;
-    }
+  #toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 100;
+    background: #0d102400;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
 
-    .sidebar-bottom {
-        margin-bottom: 5vh;
-    }
+  .sidebar-bottom {
+    margin-bottom: 5vh;
+  }
 
-    .sidebar-top {
-        margin-top: 60px;
-    }
-
+  .sidebar-top {
+    margin-top: 60px;
+  }
 }
