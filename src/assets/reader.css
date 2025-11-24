@@ -1,26 +1,30 @@
-.main-content {
+.reader-page {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 2vw;
-    right: 2vw; 
-    bottom: 0; 
+    right: 2vw;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.pages img {
-    max-width: 95vw;  
+.reader-page .pages img {
+    max-width: 95vw;
     max-height: 95vh;
     width: auto;
     height: auto;
     display: block;
 }
 
-.nav-button {
+.reader-page.expanded {
+    justify-self: center;
+}
+
+.reader-page .nav-button {
     position: absolute;
     top: 50%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50px;
     color: white;
     border: 1px solid white;
@@ -30,33 +34,33 @@
     transition: transform 0.3s ease;
 }
 
-.nav-button:hover{
+.reader-page .nav-button:hover {
     transform: scale(1.1);
 }
 
-#prev-button {
+.reader-page #prev-button {
     left: 5%;
 }
 
-#next-button {
+.reader-page #next-button {
     right: 5%;
 }
 
 
 
 @media (max-width: 768px) {
-    .pages img {
-        max-width: 80vw;  
+    .reader-page .pages img {
+        max-width: 80vw;
         max-height: 80vh;
     }
 
-    .nav-button{
+    .reader-page .nav-button {
         top: 85%;
     }
 }
 
 @media (max-width: 400px) {
-    .pages img {
-        max-width: 70vw;  
+    .reader-page .pages img {
+        max-width: 70vw;
     }
 }

@@ -1,14 +1,14 @@
-header{
+header {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 2vw;
-    
+
 }
 
 /* Search Bar*/
-.search-container{
+.search-container {
     display: flex;
     flex: 1 1 300px;
     margin-left: 2%;
@@ -16,15 +16,15 @@ header{
     align-items: center;
 }
 
-.search-container img{
+.search-container img {
     position: relative;
     right: 35px;
-    width: 20px; 
+    width: 20px;
     height: 20px;
 }
 
-.search-bar{
-    border: none; 
+.search-bar {
+    border: none;
     outline: none;
     padding: 12px 50px 12px 10px;
     width: 50%;
@@ -33,8 +33,8 @@ header{
     border: 2px solid white;
     border-radius: 32px 32px 32px 0;
     background-color: transparent;
-    font-size: 16px; 
-    color:white
+    font-size: 16px;
+    color: white
 }
 
 .search-bar::placeholder {
@@ -42,12 +42,12 @@ header{
 }
 
 /* Notificação e Perfil*/
-.notification-button{
+.notification-button {
     background-color: transparent;
     border: none;
 }
 
-.notification-profile-container{
+.notification-profile-container {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -58,7 +58,7 @@ header{
 .profile-info {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 
@@ -67,32 +67,32 @@ header{
         color: transparent;
     }
 
-    .profile-info{
+    .profile-info {
         flex-direction: column;
         font-size: 14px;
     }
 
-    .notification-profile-container{
+    .notification-profile-container {
         gap: 0px;
     }
 }
 
 @media (max-width: 480px) {
-  .profile-info {
-        gap:2px;         
-        font-size: 8px;   
-  }
+    .profile-info {
+        gap: 2px;
+        font-size: 8px;
+    }
 
-  .profile-info img, 
-  .notification-button img{
-        width: 20px;      
+    .profile-info img,
+    .notification-button img {
+        width: 20px;
         height: auto;
-  }
+    }
 
-  .search-container{
-    margin-left: 0px;
-  }
-  
+    .search-container {
+        margin-left: 0px;
+    }
+
 
 
 

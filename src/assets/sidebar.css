@@ -11,19 +11,18 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 10vw;
+    width: 17vw;
     height: 100vh;
-    max-width: 10vw;
+    max-width: 280px;
     min-width: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-right: 2px solid white;
-    background-color: #0D1024;
+    background-color: #0d1024;
     color: white;
     transition: transform 0.3s ease;
 }
-
 
 .sidebar ul {
     list-style: none;
@@ -31,21 +30,18 @@ nav {
     flex-direction: column;
     padding: 0;
     align-items: center;
-    width: auto;
-    height: auto;
 }
 
 .sidebar ul li {
-    width: auto;
-    height: auto;
-    padding: 7%;
+    width: 60%;
+    padding: 5% 0 5% 10%;
     margin-bottom: 2vh;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10%;
     border-radius: 26px 26px 26px 0px;
-
+    overflow: hidden;
 }
 
 .sidebar ul li:hover {
@@ -58,8 +54,23 @@ nav {
 }
 
 .sidebar ul li img {
-    width: 32px;
+    width: 25px;
     height: auto;
+    flex-shrink: 0;
+}
+
+.sidebar ul li span {
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 0;
+    flex: 1;
+}
+
+.sidebar-text {
+    font-size: 18px;
+    overflow: hidden;
 }
 
 /* fechando sidebar */
@@ -68,14 +79,16 @@ nav {
     transition: transform 0.3s ease;
 }
 
+@media (max-width: 1400px) {
+    /* Para telas médias - esconde texto quando não couber */
 
+    nav {
+        width: 10vw;
+        max-width: 10vw;
+    }
 
-@media (max-width: 768px) {
-    /* Para telas pequenas*/
-
-    .sidebar ul li img {
-        width: 26px;
-        height: auto;
+    .sidebar ul li span {
+        display: none;
     }
 
     .sidebar ul li {
@@ -83,10 +96,27 @@ nav {
         padding: 10px;
     }
 
+    .sidebar ul li img {
+        width: 28px;
+        height: auto;
+    }
+
     .sidebar ul {
         justify-content: center;
     }
+}
 
+@media (max-width: 768px) {
+    /* Para telas pequenas */
+
+    .sidebar ul li img {
+        width: 26px;
+        height: auto;
+    }
+
+    .sidebar ul li {
+        padding: 8px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -106,6 +136,12 @@ nav {
         border-radius: 6px;
     }
 
+    #toggle-button.closed {
+        padding-left: 0;
+        left: 10px;
+        top: 5px;
+    }
+
     .sidebar-bottom {
         margin-bottom: 5vh;
     }
@@ -113,5 +149,4 @@ nav {
     .sidebar-top {
         margin-top: 60px;
     }
-
 }

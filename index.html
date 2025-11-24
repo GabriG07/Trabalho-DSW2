@@ -1,119 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IndigoComics</title>
-    <link rel="icon" type="image/png" href="img/IndigoComics.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="css/header.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/mainContentHome.css" />
-  </head>
+<!doctype html>
+<html lang="en">
 
-  <body>
-    <!-- Sidebar -->
-    <button id="toggle-button" aria-label="Abrir menu de navegação">☰</button>
-    <nav class="sidebar" id="sidebar">
-      <div class="sidebar-top">
-        <img class="logo" src="img/IndigoComics.png" alt="Logo IndigoComics"/>
-        <ul>
-          <li><img src="img/home.png" alt="Botão Home"/><span>Menu</span></li>
-          <li><img src="img/suaColecao.png" alt="Botão de Coleção"/><span>Sua Coleção</span></li>
-          <li><img src="img/favoritos.png" alt="Botão de Favoritos"/><span>Favoritos</span></li>
-          <li><img src="img/novidades.png" alt="Botão de Novidades"/><span>Novidades</span></li>
-        </ul>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/src/assets/img/IndigoComics.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>indigo-comics</title>
+</head>
 
-      <div class="sidebar-bottom">
-        <ul>
-          <li><img src="img/configs.png" alt="Botão de Configurações"/><span>Configurações</span></li>
-          <li><img src="img/sair.png" alt="Botão de Sair"/><span>Sair</span></li>
-        </ul>
-      </div>
-    </nav>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 
-    <!-- Coonteúdo Principal -->
-    <main class="main-content">
-      <header>
-        <div class="search-container">
-          <input
-            type="text"
-            class="search-bar"
-            placeholder="Pesquise um quadrinho ou autor"
-          />
-          <img src="img/search.png" alt="Ícone de Busca"/>
-        </div>
-
-        <div class="notification-profile-container">
-          <button class="notification-button">
-            <img src="img/notification.png" alt="Botão de Notificações"/>
-          </button>
-          <div class="profile-info">
-            <img src="img/profilePicture.png" alt="Foto de Perfil"/>
-            <span class="profile-name">PedrinhoZik412</span>
-          </div>
-        </div>
-      </header>
-
-      <section class="images-hqs-home">
-        <div class="hqs-top">
-          <div id="hq1-border">
-            <img src="img/beatboxAndTuneCover.png" alt="Capa da HQ Beatbox and Tune: Volume 1" />
-            <div class="hq1-buttom1">
-              <img src="img/botaoElipseGrande.png" alt="" />
-              <span class="hq1-buttom1-text-authors"
-                >Foster Gaudio & Wagner Esposito</span
-              >
-              <span class="hq1-buttom1-text-title"
-                >Beatbox and Tune: Volume 1</span
-              >
-            </div>
-            <div>
-              <img class="hq1-buttom2" src="img/botaoLeiaAgora.png" alt="Botão Leia Agora" />
-            </div>
-          </div>
-
-          <div id="hq2-border">
-            <img src="img/imagemHqContinueALeitura.png" alt="Capa do quadrinho Antes do Incal - 13#" />
-            <div class="hq2-buttom1">
-              <img src="img/botaoContinueALeitura.png" alt="Botão Continuar Leitura" />
-              <span class="hq2-buttom1-text-title">Antes do Incal - 13#</span>
-              <span class="hq2-buttom1-text-authors"
-                >Zoran Janjetov, Alejandro Jodorowski</span
-              >
-            </div>
-            <div class="hq2-buttom2">
-              <img src="img/botaoPorcentagemLida.png" alt="Ícone de progresso de leitura" />
-              <span class="hq2-buttom2-text">41%</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hqs-bottom">
-          <div id="hq3-border">
-            <img src="img/beastlandsCover.png" alt="Capa do quadrinho Beastlands" />
-          </div>
-          <div id="hq4-border">
-            <img src="img/houseAmokCover.png" alt="Capa do quadrinho House Amok" />
-          </div>
-          <div id="hq5-border">
-            <img src="img/lifeIsStrangeCover.png" alt="Capa do quadrinho Life is Strange" />
-          </div>
-          <div id="hq6-border">
-            <img src="img/theWildCosmosCover.png" alt="Capa do quadrinho The Wild Cosmos" />
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="js/sidebar.js"></script>
-    <script src="js/hqsBottomHover.js"></script>
-  </body>
 </html>
