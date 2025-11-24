@@ -1,3 +1,6 @@
+Para rodar o projeto React, executar o comando 'npm run dev' na raiz do projeto.
+
+
 André Souza Santos - RA 769809
 <br>
 Gabriel Henrique Rodrigues - RA 813345
