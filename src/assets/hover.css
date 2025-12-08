@@ -1,0 +1,52 @@
+.hoverComponent {
+    background-color: #0d1024;
+    border: 2px solid white;
+    overflow-y: auto;
+    border-radius: 0;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    bottom: 0;
+    padding: 10px;
+    gap: 10px;
+    /* top: 50%; */
+    height: 45%;
+    width: 91.5%;
+    color: white;
+}
+
+.hoverComponent-text-title {
+  /* top: 10%; */
+  left: 7%;
+  width: 90%;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  font-family: Roboto;
+  line-height: 1.2;
+}
+
+.hoverComponent-text-subtitle {
+  left: 7%;
+  width: 90%;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+  font-family: Roboto;
+  line-height: 1.2;
+}
+
+.hover-image {
+    border-radius: 0;
+    position: absolute;
+    /* flex-direction: column; */
+    object-fit: cover;
+    top: 4px;
+    padding: 0px;
+    gap: 10px;
+    /* top: 50%; */
+    height: auto;
+    width: auto;
+}

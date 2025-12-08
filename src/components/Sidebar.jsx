@@ -9,7 +9,7 @@ import leaveIcon from "../assets/img/sair.png";
 import "../assets/sidebar.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Sidebar({ closed, setClosed }) {
+export default function Sidebar({ user, closed, setClosed }) {
 
     const navigate = useNavigate();
 
@@ -23,9 +23,25 @@ export default function Sidebar({ closed, setClosed }) {
 
             <nav className={`sidebar ${closed ? "closed" : ""}`} id="sidebar">
                 <div className="sidebar-top">
-                    <img className="logo" src={logo} alt="logo" onClick={() => navigate("/")} />
+                    <img 
+                        className="logo"
+                        src={logo}
+                        alt="logo"
+                        onClick={() => {
+                            navigate("/home", {
+                                state: {
+                                    userData: user,
+                                }
+                            })}
+                        }/>
                     <ul>
-                        <li onClick={() => navigate("/")}><img src={homeIcon} alt="Botão Home" /><span>Menu</span></li>
+                        <li onClick={() => {
+                            navigate("/home", {
+                                state: {
+                                    userData: user,
+                                }
+                            })}}>
+                        <img src={homeIcon} alt="Botão Home" /><span>Menu</span></li>
                         <li><img src={collectionIcon} alt="Botão de Coleção" /><span>Sua Coleção</span></li>
                         <li><img src={favsIcon} alt="Botão de Favoritos" /><span>Favoritos</span></li>
                         <li><img src={newsIcon} alt="Botão de Novidades" /><span>Novidades</span></li>
@@ -35,7 +51,7 @@ export default function Sidebar({ closed, setClosed }) {
                 <div className="sidebar-bottom">
                     <ul>
                         <li><img src={configsIcon} alt="Botão de Configurações" /><span>Configurações</span></li>
-                        <li><img src={leaveIcon} alt="Botão de Sair" /><span>Sair</span></li>
+                        <li onClick={() => navigate("/")}><img src={leaveIcon} alt="Botão de Sair" /><span>Sair</span></li>
                     </ul>
                 </div>
             </nav>

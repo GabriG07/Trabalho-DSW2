@@ -4,14 +4,15 @@
     left: 2vw;
     right: 2vw;
     bottom: 0;
-    display: flex;
+    display: fill;
     justify-content: center;
     align-items: center;
 }
 
 .reader-page .pages img {
-    max-width: 95vw;
-    max-height: 95vh;
+    padding-left: 20%;
+    max-width: 60%;
+    /* max-height: 95vh; */
     width: auto;
     height: auto;
     display: block;
@@ -24,10 +25,8 @@
 .reader-page .nav-button {
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50px;
+    height: 96px;
     color: white;
-    border: 1px solid white;
     font-size: 2rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -50,8 +49,7 @@
 
 @media (max-width: 768px) {
     .reader-page .pages img {
-        max-width: 80vw;
-        max-height: 80vh;
+        max-width: 60%;
     }
 
     .reader-page .nav-button {

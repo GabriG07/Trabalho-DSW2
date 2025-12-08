@@ -5,7 +5,9 @@ import profilePicture from "../assets/img/profilePicture.png"
 import "../assets/header.css";
 
 
-export default function Header() {
+export default function Header({ user }) {
+
+    const userName = user.username;
 
     return (
         <>
@@ -21,7 +23,7 @@ export default function Header() {
                     </button>
                     <div className="profile-info">
                         <img src={profilePicture} alt="Foto de Perfil" />
-                        <span className="profile-name">PedrinhoZik412</span>
+                        <span className="profile-name">{userName}</span>
                     </div>
                 </div>
             </header>
