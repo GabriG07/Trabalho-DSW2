@@ -1,3 +1,5 @@
+Para rodar o backend mock, executar o comando 'npm run start' dentro da pasta "backend"
+<br>
 Para rodar o projeto React, executar o comando 'npm run dev' na raiz do projeto.
 
 
