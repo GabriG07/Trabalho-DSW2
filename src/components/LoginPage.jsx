@@ -1,5 +1,5 @@
 
-import { useState }from 'react';
+import { useState, useEffect }from 'react';
 import searchIcon from "../assets/img/search.png"
 import backgroundImage from "../assets/img/backgroundImage.png";
 import logo from "../assets/img/IndigoComics.png";
@@ -32,6 +32,7 @@ export default function LoginPage() {
                 resetForm();
                 console.log(json);
                 if (json.status == '200') {
+                    localStorage.setItem("localUser", JSON.stringify(json.user));
                     navigate("/home", {
                         state: {
                             userData: json.user,
@@ -45,6 +46,22 @@ export default function LoginPage() {
         setUsername('');
         setSenha('');
     }
+
+    useEffect(() => {
+        var localUser = localStorage.getItem("localUser");
+        console.log("localUser " + localUser);
+        
+        if (localUser != "") {
+            var userJson = JSON.parse(localUser);
+            console.log(userJson);
+            navigate("/home", {
+                state: {
+                    userData: userJson,
+                }
+            });
+        }
+
+    },[]);
 
     return (
         <section className="login_page">

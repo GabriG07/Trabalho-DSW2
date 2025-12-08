@@ -51,7 +51,9 @@ export default function Sidebar({ user, closed, setClosed }) {
                 <div className="sidebar-bottom">
                     <ul>
                         <li><img src={configsIcon} alt="Botão de Configurações" /><span>Configurações</span></li>
-                        <li onClick={() => navigate("/")}><img src={leaveIcon} alt="Botão de Sair" /><span>Sair</span></li>
+                        <li onClick={() => {
+                            localStorage.setItem("localUser", "");
+                            navigate("/")}}><img src={leaveIcon} alt="Botão de Sair" /><span>Sair</span></li>
                     </ul>
                 </div>
             </nav>

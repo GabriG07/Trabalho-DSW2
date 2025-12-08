@@ -31,7 +31,6 @@ export default function HQsHome({ user }) {
 
     const firstManga = user?.latest?.first;
     const secondManga = user?.latest?.second;
-    console.log(secondManga);
     const thirdManga = user?.latest?.third;
     const fourthManga = user?.latest?.fourth;
 
